@@ -28,7 +28,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-[#0B1F3A] shadow-lg">
       <div className="bg-white/85 backdrop-blur-md supports-[backdrop-filter]:bg-white/75">
         <div className="mx-auto max-w-6xl px-3 py-1 md:hidden">
-          <div className="flex items-center justify-between">
+          <div className="relative flex items-center justify-center">
             <Image
               src="/branding/cpu-logo-clear.png"
               alt="California Public University logo"
@@ -40,7 +40,7 @@ export function Navbar() {
             <button
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               onClick={() => setMenuOpen((prev) => !prev)}
-              className="rounded-lg border border-slate-300 bg-white p-1.5 text-[#0B1F3A]"
+              className="absolute right-0 rounded-lg border border-slate-300 bg-white p-1.5 text-[#0B1F3A]"
             >
               {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
